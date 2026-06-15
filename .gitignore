@@ -1,0 +1,16 @@
+# Compiled binaries
+pass_analy
+pass_analy.exe
+
+# Target distribution folder
+dist/
+
+# Local configuration / environment files
+.env
+.env.*
+!.env.example
+
+# Go build/test cache
+*.test
+*.out
+go.sum
