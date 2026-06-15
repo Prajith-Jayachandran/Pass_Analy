@@ -130,7 +130,9 @@ if [ "$DOWNLOAD_SUCCESS" -ne 1 ]; then
 
   # Check again if go exists now
   if command_exists go; then
-    echo "Go compiler detected. Compiling password analyzer..."
+    echo "Go compiler detected. Preparing dependencies..."
+    go mod tidy
+    echo "Compiling password analyzer..."
     go build -ldflags="-s -w" -o "pass_analy${SUFX}" .
     echo "Compilation successful!"
   else

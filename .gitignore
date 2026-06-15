@@ -13,4 +13,3 @@ dist/
 # Go build/test cache
 *.test
 *.out
-go.sum
